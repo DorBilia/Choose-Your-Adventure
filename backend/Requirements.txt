@@ -1,6 +1,6 @@
 fastapi
 langchain
-langchain-openai
+langchain-google_genai
 python-dotenv
 sqlalchemy
 uvicorn
