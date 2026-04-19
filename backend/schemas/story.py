@@ -30,10 +30,6 @@ class StoryBase(BaseModel):
         from_attributes = True
 
 
-class CreateStoryRequest(BaseModel):
-    theme: str
-
-
 class CompleteStoryResponse(StoryBase):
     id: int
     created_at: datetime

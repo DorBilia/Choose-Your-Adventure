@@ -3,10 +3,6 @@ from datetime import datetime
 from pydantic import BaseModel
 
 
-class StoryJobBase(BaseModel):
-    theme: str
-
-
 class StoryJobResponse(BaseModel):
     job_id: str
     status: str
@@ -17,7 +13,3 @@ class StoryJobResponse(BaseModel):
 
     class Config:
         from_attributes = True
-
-
-class StoryJobCreate(StoryJobBase):
-    pass
